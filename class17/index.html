@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SELECTORS</title>
+    <style>
+        /* ID SELECTOR */
+        #green{
+            background-color: green;
+        }
+        /* class selector */
+        .redcolor{
+            background-color: red;
+        }
+        /* child selectors */
+        div > p{
+            color: white;
+            background-color: black;
+             
+        }
+        /* descendant selector */
+        div p{
+            color: yellow;
+             background-color: blue;
+        }
+        /* universal selector */
+        *{
+            font-family: Helvetica;
+            font-size: 20px;
+        }
+        /* pseudo selector */
+        a:visited{
+            color: red;
+        }
+         a:link{
+            color: blue;
+        }
+        a:active{
+            background-color: yellow;
+        }
+        a:hover{
+            background-color: green;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="redcolor">
+        THIS IA A DIV ELEMNT
+        <p>THIS IS A PARAGRAPH inside div</p>
+        <article>
+             <p>THIS IS A PARAGRAPH inside article</p>
+        </article>
+
+    </div>
+    <div id="green">
+        THIS IS ANOTHER DIV ELEMENT
+    </div>
+    <div>
+        <a href="https://google.com">Google</a>
+    </div>
+    
+</body>
+</html>
